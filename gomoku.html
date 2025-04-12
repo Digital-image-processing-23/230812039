@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>五子棋游戏</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5dc;
+        }
+        #board {
+            background-color: #ffd700;
+            display: grid;
+            grid-template-columns: repeat(15, 30px);
+            grid-template-rows: repeat(15, 30px);
+            gap: 1px;
+            padding: 10px;
+            border: 2px solid #8b4513;
+        }
+        .cell {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .black {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .white {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="board"></div>
+    <script src="gomoku.js"></script>
+</body>
+</html>
